@@ -1,4 +1,4 @@
-.main-view{
+body{
     /*Gradient from https://uigradients.com/#DeepPurple */
     background: #673AB7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -6,6 +6,7 @@
     
 }
 footer {
+    /*background-color:  ;*/
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -14,5 +15,9 @@ footer {
 
 .full-width {
     height: 100%;
+}
+
+.card{
+    vertical-align: middle;
 }
 
