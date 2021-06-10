@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <meta charset="UTF-8">
     <meta name="Description" content="PGO-Alex Portfolio">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport " content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -20,7 +19,7 @@
 
 <body>
     <div class="container">
-        <div class="row valign-wrapper">
+        <div class="row">
             <div class="col s1 m1 l1"></div>
             <div class="col s10 m10 l0">
                 <div class="card-content center">
@@ -29,17 +28,18 @@
                         class="hoverable responsive-img circle animate__animated animate__rotateIn">
                     <div class="col s12 l12 ">
                         <div class="tab">
-                            <button class="hoverable btn deep-purple darken-3-text tab-link col s3"
+                            <button class="waves-effect waves-light hoverable btn tab-link col s3"
                                 onclick="openTab(event,'about-me')" id="defaultOpen">About Me</button>
-                            <button class="hoverable btn deep-purple darken-3-text tab-link col s3"
+                            <button class="waves-effect waves-light hoverable btn tab-link col s3"
                                 onclick="openTab(event,'school')">School</button>
-                            <button class="hoverable btn deep-purple darken-3-text tab-link col s3"
+                            <button class="waves-effect waves-light hoverable btn tab-link col s3"
                                 onclick="openTab(event,'my-jobs')">My Jobs</button>
-                            <button class="hoverable btn deep-purple darken-3-text tab-link col s3"
+                            <button class="waves-effect waves-light hoverable btn tab-link col s3"
                                 onclick="openTab(event,'hobbies')">Hobbies</button>
                         </div>
-                        <div id="about-me" class="tab-content">
-                            <p>My name is Alex Guevara, i'm 27 and i live on Mexico, and i like program things that i need or i see
+                        <div id="about-me" class="tab-content animate__animated animate__fadeIn">
+                            <p>My name is Alex Guevara, i'm 27 and i live on Mexico, and i like program things that i
+                                need or i see
                                 that can be usefull or fun, and i wish the things that i made be useful some day for
                                 some one. Actually i'm learning some python, django and go, for web development, and
                                 maybe i will
@@ -47,7 +47,7 @@
                             </p>
                         </div>
 
-                        <div id="school" class="tab-content">
+                        <div id="school" class="tab-content animate__animated animate__fadeIn">
                             <p>I don't have an university degree, i learn how to program things by my
                                 self, with
                                 youtube videos,
@@ -56,7 +56,7 @@
                                 and talking with other devs on discord.</p>
                         </div>
 
-                        <div id="my-jobs" class="tab-content">
+                        <div id="my-jobs" class="tab-content animate__animated animate__fadeIn">
                             <p>i worked as Web Developer & Technical Support for <a href=""
                                     title="Tjmarkethink">Tjmarkethink</a> for barely
                                 4 years, there i learn to create and develop web pages.
@@ -65,7 +65,7 @@
                                 about how to replace some internal computer parts, and bring a special customer service
                                 and take care of all company users. </p>
                         </div>
-                        <div id="hobbies" class="tab-content">
+                        <div id="hobbies" class="tab-content animate__animated animate__fadeIn">
                             <p>One of my hobbies is play videogames, i like all the types and genres, some weekends i
                                 meet with friends to play videogames and drink some beers. All days on my spare
                                 time, i usually watch some courses about programing on spanish or english, and i try to
@@ -78,28 +78,24 @@
                     <div class="row ">
                         <div class="col s3">
                             <a title="My discord contact" href="#" target="_blank">
-                                <i style="color: white;"
-                                    class="hoverable fab fa-discord fa-3x"></i>
+                                <i class="hoverable fab fa-discord fa-3x"></i>
                             </a>
                         </div>
                         <div class="col s3">
                             <a title="My facebook page contact" href="#" target="_blank">
-                                <i style="color: white;"
-                                    class="hoverable fab fa-facebook-square fa-3x"></i>
+                                <i class="hoverable fab fa-facebook-square fa-3x"></i>
                             </a>
                         </div>
                         <div class="col s3">
                             <a title="You can send me an Email if you want to contact me"
                                 href="mailto:oguevara.alex@gmail.com">
-                                <i style="color: white;"
-                                    class="hoverable fa fa-envelope fa-3x"></i>
+                                <i class="hoverable fa fa-envelope fa-3x"></i>
                             </a>
                         </div>
                         <div class="col s3">
                             <a title="Repository with my prrojects and programs" href="https://github.com/PGO-Alex"
                                 target="_blank">
-                                <i style="color: white;"
-                                    class="hoverable fab fa-github fa-3x"></i>
+                                <i class="hoverable fab fa-github fa-3x"></i>
                             </a>
                         </div>
                     </div>
@@ -113,11 +109,10 @@
     <script src="js/MyScripts.js">
     </script>
     <script>
-        // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
 </body>
-<footer class="page-footer transparent">
+<footer class="transparent">
     <div class="row">
         <div class="left col 6">
             ®All Rights Reserved
