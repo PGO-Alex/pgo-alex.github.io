@@ -22,8 +22,9 @@ button:hover{
   background-color: blueviolet !important;
 }
 
-.tab .indicator {
-  background-color: #fff;
+.tab{
+  margin-bottom: 5%;
+  margin-top: 1%;
 }
 
 .active{
@@ -42,6 +43,7 @@ button:hover{
   
   /* Style the tab content */
   .tab-content {
+    margin-top: 15px;
     display: none;
     padding: 6px 12px;
   }
