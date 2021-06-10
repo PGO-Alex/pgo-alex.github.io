@@ -13,3 +13,13 @@ function openTab(eve,option) {
     document.getElementById(option).style.display = "block";
     eve.currentTarget.className += " active ";
 }
+
+function ChangeBackground(){
+  var valor = document.body.classList;
+  if(valor.contains('themeB')){
+    document.body.classList.replace("themeB","themeA");
+  }
+  else if(valor.contains('themeA')){
+    document.body.classList.replace("themeA","themeB");
+  }
+}

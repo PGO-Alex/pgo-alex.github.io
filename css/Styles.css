@@ -1,25 +1,85 @@
 body{
-    /*Gradient from https://uigradients.com/#DeepPurple */
-    background: #673AB7;
-    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);
-    background: linear-gradient(to right, #512DA8, #673AB7);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
     text-decoration: solid;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-main {
-  flex: 1 0 auto;
-}
 
-i{
+/*Theme styles*/
+.themeA{
+  
+  background: #673AB7;
+  background: -webkit-linear-gradient(to right, #512DA8, #673AB7);
+  background: linear-gradient(to right, #512DA8, #673AB7);
+  color: white;
+  
+}
+.themeA button:hover{
+  background-color: blueviolet !important;
+}
+.themeA i{
   color:white;;
 }
+.themeA .active{
+  background-color: rgb(170, 69, 253) !important ;
+  color: white  !important;
+}
 
-button:hover{
-  background-color: blueviolet !important;
+.themeA .fa-heart{
+  color: red;
+}
+
+.themeA .button{
+  padding: 1% 1% 1% 1%;
+  color: white;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: white;;
+}
+
+.themeB{
+  background-color: black;
+  color: green;
+}
+.themeB .btn{
+  border: 1px solid green;
+  color: green;
+}
+.themeB button:hover{
+  background-color: rgb(57, 168, 57) !important;
+  color: black;
+}
+.themeB i{
+  color:green;;
+}
+.themeB i:hover{
+  color: rgb(57, 168, 57);
+}
+
+.themeB .active{
+  background-color: rgb(57, 168, 57) !important ;
+  color:  black !important;
+  text-decoration: solid;
+}
+
+.themeB footer{
+  border-top: 2px solid green;
+}
+.themeB .fa-heart{
+  color: rgb(57, 168, 57);
+}
+
+.themeB .button{
+  padding: 1% 1% 1% 1%;
+  color: rgb(57, 168, 57);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgb(57, 168, 57);;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .tab{
@@ -27,10 +87,7 @@ button:hover{
   margin-top: 1%;
 }
 
-.active{
-  background-color: rgb(170, 69, 253) !important ;
-  color:  white !important;
-}
+
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
@@ -64,4 +121,19 @@ button:hover{
     width: 100%;
     height: 50px;
     border-top: 2px solid white;
+}
+
+.themeChanger{
+  position:absolute !important;
+  right: 0% !important;
+  top: 0% !important;
+}
+
+
+
+
+@media only screen and (max-width:580 ) {
+  .themeChanger{
+    position:relative !important;
+  }
 }
