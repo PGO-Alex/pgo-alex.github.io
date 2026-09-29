@@ -129,7 +129,12 @@ main {
   top: 0% !important;
 }
 
-
+.imgHeigth-50{
+  height: 50%;
+}
+.imgWidth-50{
+  width: 50%;
+}
 
 
 @media only screen and (max-width:580 ) {
